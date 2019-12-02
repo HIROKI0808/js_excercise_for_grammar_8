@@ -96,11 +96,11 @@ function showTodos() {
  */
 // ここにcreateTodo関数を作る
 function createTodo() {
-	let addTask = prompt('タスクを入力して下さい');
-	if (addTask === '') {
+	const task = prompt('タスクを入力して下さい');
+	if (task === '') {
 		alert('何も入力されていないためスキップします');
 	} else {
-		todos.push(addTask);
+		todos.push(task);
 		alert('新しいタスクを追加しました');
 		showTodos();
 	}
